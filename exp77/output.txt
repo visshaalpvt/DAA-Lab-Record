@@ -1,0 +1,2 @@
+weights=[10, 20, 30, 40, 50], capacity=60 -> maximum weight loaded = 60 (items [50, 10])
+weights=[5, 10, 15, 20, 25, 30], capacity=50 -> maximum weight loaded = 50 (items [30, 20])
