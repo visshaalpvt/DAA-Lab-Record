@@ -1,0 +1,4 @@
+Test Case 1:
+Number of ways to reach sum 7: 6
+Test Case 2:
+Number of ways to reach sum 10: 6
