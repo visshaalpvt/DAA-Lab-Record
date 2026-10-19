@@ -1,0 +1,76 @@
+# Exp 51: TSP with an Added Fifth City (Held-Karp)
+
+## Aim
+To solve the travelling salesman problem for 4 cities and again after adding a fifth city E, finding the shortest route and its distance.
+
+## Algorithm
+1. Build the symmetric distance matrix
+2. dp[(subset, last)] = minimum cost of starting at A, visiting 'subset' and ending at 'last'
+3. Extend subsets one city at a time and keep parent pointers
+4. Close the tour back to A, take the minimum and reconstruct the route
+
+## Input
+```
+A-B 10, A-C 15, A-D 20, A-E 25
+B-C 35, B-D 25, B-E 30
+C-D 30, C-E 20, D-E 15
+```
+
+## Program
+[`solution.py`](solution.py)
+
+```python
+from itertools import combinations
+
+def held_karp(d):
+    n = len(d)
+    C = {}
+    for k in range(1, n):
+        C[(1 << k, k)] = (d[0][k], 0)
+    for size in range(2, n):
+        for sub in combinations(range(1, n), size):
+            bits = sum(1 << b for b in sub)
+            for k in sub:
+                prev = bits & ~(1 << k)
+                C[(bits, k)] = min((C[(prev, m)][0] + d[m][k], m) for m in sub if m != k)
+    bits = (1 << n) - 2
+    res, last = min((C[(bits, k)][0] + d[k][0], k) for k in range(1, n))
+    route = []
+    while bits:
+        route.append(last)
+        bits, last = bits & ~(1 << last), C[(bits, last)][1]
+    return res, [0] + route[::-1] + [0]
+
+names = "ABCDE"
+dist = {("A","B"):10, ("A","C"):15, ("A","D"):20, ("A","E"):25, ("B","C"):35,
+        ("B","D"):25, ("B","E"):30, ("C","D"):30, ("C","E"):20, ("D","E"):15}
+def matrix(n):
+    m = [[0] * n for _ in range(n)]
+    for (a, b), w in dist.items():
+        i, j = names.index(a), names.index(b)
+        if i < n and j < n:
+            m[i][j] = m[j][i] = w
+    return m
+
+for n in (4, 5):
+    cost, route = held_karp(matrix(n))
+    print(f"{n} cities ({names[:n]}): shortest route {' -> '.join(names[i] for i in route)}  total distance = {cost}")
+```
+
+## Output
+```
+4 cities (ABCD): shortest route A -> C -> D -> B -> A  total distance = 80
+5 cities (ABCDE): shortest route A -> C -> E -> D -> B -> A  total distance = 85
+```
+
+## Screenshot
+![Output screenshot](output.png)
+
+## Result
+The program for **TSP with an Added Fifth City (Held-Karp)** was implemented and executed successfully, and the output shown above was obtained for all the given test cases.
+
+## Time and Space Complexity
+| | Complexity |
+|---|---|
+| **Time** | O(n^2 * 2^n) |
+| **Space** | O(n * 2^n) |

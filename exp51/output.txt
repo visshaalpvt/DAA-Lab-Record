@@ -1,0 +1,2 @@
+4 cities (ABCD): shortest route A -> C -> D -> B -> A  total distance = 80
+5 cities (ABCDE): shortest route A -> C -> E -> D -> B -> A  total distance = 85
