@@ -1,0 +1,8 @@
+Input: ['This', 'is', 'an', 'example', 'of', 'text', 'justification.'] maxWidth=16
+  "This    is    an"
+  "example  of text"
+  "justification.  "
+Input: ['What', 'must', 'be', 'acknowledgment', 'shall', 'be'] maxWidth=16
+  "What   must   be"
+  "acknowledgment  "
+  "shall be        "
