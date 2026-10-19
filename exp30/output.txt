@@ -1,0 +1,6 @@
+Test Case 1:
+Optimal Selection: [1, 2]
+Total Value: 8
+Test Case 2:
+Optimal Selection: [0, 1, 2]
+Total Value: 12
