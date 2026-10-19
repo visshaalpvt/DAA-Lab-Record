@@ -1,0 +1,5 @@
+Input: [64, 25, 12, 22, 11] -> Output: [11, 12, 22, 25, 64]  (passes used: 4)
+Input: [29, 10, 14, 37, 13] -> Output: [10, 13, 14, 29, 37]  (passes used: 4)
+Input: [3, 5, 2, 1, 4] -> Output: [1, 2, 3, 4, 5]  (passes used: 4)
+Input: [1, 2, 3, 4, 5] -> Output: [1, 2, 3, 4, 5]  (passes used: 1)
+Input: [5, 4, 3, 2, 1] -> Output: [1, 2, 3, 4, 5]  (passes used: 4)
