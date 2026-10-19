@@ -1,0 +1,2 @@
+Element 10 is found at position 5
+Element 100 is not found
