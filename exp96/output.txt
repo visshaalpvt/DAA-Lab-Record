@@ -1,0 +1,2 @@
+words2=["e","o"] -> ['facebook', 'google', 'leetcode']
+words2=["l","e"] -> ['apple', 'google', 'leetcode']
