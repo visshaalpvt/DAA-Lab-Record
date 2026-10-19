@@ -1,0 +1,8 @@
+Test Case 1:
+  codes   : [('a', '00'), ('b', '01'), ('c', '10'), ('d', '11')]
+  encoded : 0001001011
+  decoded : abacd
+Test Case 2:
+  codes   : [('a', '0'), ('b', '111'), ('c', '101'), ('d', '100'), ('e', '1101'), ('f', '1100')]
+  encoded : 110010111101001101
+  decoded : fcbade
