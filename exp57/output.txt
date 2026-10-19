@@ -1,0 +1,3 @@
+WordFilter(["apple"]).f("a", "e") -> 0
+WordFilter(["apple","ape","apple"]).f("ap", "e") -> 2 (largest valid index)
+wf.f("b", "e") -> -1
