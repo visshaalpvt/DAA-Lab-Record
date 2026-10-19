@@ -1,0 +1,3 @@
+Hamiltonian Path Exists: True (Path: A -> B -> C -> D)
+Verifier accepts ['A','B','C','D']: True
+Verifier accepts ['A','C','B','D']: False
