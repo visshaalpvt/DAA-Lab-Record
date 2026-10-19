@@ -1,0 +1,7 @@
+Threshold problem output: 0
+
+(a)
+Shortest path C to A: C -> D -> A | distance = 7
+
+(b)
+Shortest path E to C: E -> D -> C | distance = 5
