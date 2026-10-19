@@ -1,0 +1,4 @@
+First-Fit: Number of Bins Used: 2  ->  Bin 1: [4, 1, 4, 1], Bin 2: [8, 2]   (time 5.2 microseconds)
+Best-Fit: Number of Bins Used: 2  ->  Bin 1: [4, 4, 2], Bin 2: [8, 1, 1]   (time 9.9 microseconds)
+First-Fit Decreasing: Number of Bins Used: 2  ->  Bin 1: [8, 2], Bin 2: [4, 4, 1, 1]   (time 2.7 microseconds)
+Lower bound = ceil(total weight / capacity) = 2
