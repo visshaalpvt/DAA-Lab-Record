@@ -1,0 +1,6 @@
+Closest pair: P4(9, 3.5) - P8(7.5, 4.5)  distance = 1.8028
+Convex hull (counter-clockwise): P3, P1, P5, P6, P7
+Coordinates: [(5, 3), (10, 0), (15, 3), (12.5, 7), (6, 6.5)]
+
+Collinear test: [(0,0),(1,1),(2,2),(3,0),(3,3)]
+Hull: [(0, 0), (3, 0), (3, 3)]
