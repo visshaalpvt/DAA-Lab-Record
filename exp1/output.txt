@@ -1,0 +1,6 @@
+Input : ['abc', 'car', 'ada', 'racecar', 'cool']
+Output: 'ada'
+Input : ['notapalindrome', 'racecar']
+Output: 'racecar'
+Input : ['abc', 'def']
+Output: ''
