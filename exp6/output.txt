@@ -1,0 +1,8 @@
+Input : []
+Output: None (the list is empty)
+Input : [5]
+Output: 5
+Input : [3, 3, 3, 3, 3]
+Output: 3
+Input : [9, 2, 7, 4]
+Output: 9
