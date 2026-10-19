@@ -1,0 +1,2 @@
+haystack="sadbutsad", needle="sad" -> 0
+haystack="leetcode", needle="leeto" -> -1
