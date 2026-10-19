@@ -1,0 +1,45 @@
+Keys=['A', 'B', 'C', 'D'], Frequencies=[0.1, 0.2, 0.4, 0.3]
+Cost table (row i, column j = cost of keys i..j):
+     0.1    0.4    1.1    1.7
+       -    0.2    0.8    1.4
+       -      -    0.4    1.0
+       -      -      -    0.3
+Root table:
+       1      2      3      3
+       -      2      3      3
+       -      -      3      3
+       -      -      -      4
+Optimal BST (root at top, children indented):
+C
+    B
+        A
+    D
+Optimal cost = 1.7 
+
+Keys=[10, 12], Frequencies=[34, 50]
+Cost table (row i, column j = cost of keys i..j):
+      34    118
+       -     50
+Root table:
+       1      2
+       -      2
+Optimal BST (root at top, children indented):
+12
+    10
+Optimal cost = 118 
+
+Keys=[10, 12, 20], Frequencies=[34, 8, 50]
+Cost table (row i, column j = cost of keys i..j):
+      34     50    142
+       -      8     66
+       -      -     50
+Root table:
+       1      1      3
+       -      2      3
+       -      -      3
+Optimal BST (root at top, children indented):
+20
+    10
+        12
+Optimal cost = 142 
+
