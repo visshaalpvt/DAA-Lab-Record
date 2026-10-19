@@ -1,0 +1,15 @@
+Input: ilike
+Output: Yes
+   The string can be segmented as "i like"
+Input: ilikesamsung
+Output: Yes
+   The string can be segmented as "i like sam sung"
+   The string can be segmented as "i like samsung"
+Input: ilikemangoicecream
+Output: Yes
+   The string can be segmented as "i like man go ice cream"
+   The string can be segmented as "i like man go icecream"
+   The string can be segmented as "i like mango ice cream"
+   The string can be segmented as "i like mango icecream"
+Input: iloveyou
+Output: No
