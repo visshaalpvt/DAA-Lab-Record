@@ -1,0 +1,1 @@
+Closest pair: (1, 2) - (3, 1) Minimum distance: 2.23606797749979
