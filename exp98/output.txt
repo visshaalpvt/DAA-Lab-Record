@@ -1,0 +1,7 @@
+Satisfiability: True (satisfying assignment: x1 = True, x2 = True, x3 = True, x4 = False, x5 = False)
+
+Reduction Vertex Cover (k=2) -> 3-SAT: 56 clauses, every clause has exactly 3 literals: True
+  Unsatisfiable -> no vertex cover of size 2
+
+Reduction Vertex Cover (k=3) -> 3-SAT: 89 clauses, every clause has exactly 3 literals: True
+  Satisfiable -> vertex cover of size 3 exists: [1, 2, 4] | valid: True
